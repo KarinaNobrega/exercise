@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    height: 100%;
+}
+
+h1{
+    text-align: center;
+}
+
+p{
+    text-align: center;
+    font-size: 20px;
+    line-height: 30px; /*espaçamento entre as linhas*/
+}
+
+.teste1{
+    width: 300px;
+    margin-top: 30px;
+    margin-left: 30px;
+    display: inline-block;
+    height: 300px;
+    background-color: wheat;
+    text-align: center;
+    font-size: 20px;
+}
+
+.teste2{
+    width: 300px;
+    margin-top: 30px;
+    margin-left: 30px;
+    display: inline-block;
+    height: 300px;
+    background-color: rgb(225, 241, 150);
+    text-align: center;
+    font-size: 20px;
+}
+
+.teste3{
+    background-color: rgb (50,50,50);
+    display: inline-block;
+    width: 300px;
+    height: 300px;
+    margin-top: 30px;
+    margin-left: 30px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.teste1:hover{ /*os dois pontos indicam que será inserida uma pseudo-classe, no caso, HOVER --> significa trocar a cor/tamanho da caixa ao passar com o o mouse em cima*/
+    height: 900px;
+    background-color: blueviolet;
+}
+
+.teste2:active{ /*ACTIVE --> mudará cor e tamanha quando o mouse for pressionado sob a caixa*/
+    background-color: aqua;
+}
+
+.teste3:focus{ /*FOCUS --> formulários */
+    background-color: darkcyan;
+}
+
+.link1:visited{ /*mudará a cor do link caso ele tenha sido visitad0*/
+    color: darkmagenta;
+}
+
+.link2:link{ /*mudará a cor do link quando ele for acionado, porém, continuará em sua cor padrão, mesmo que tenha sido visitado*/
+    color: orangered;
+}
+
+ul{
+    list-style-position: inside;
+}
+
+ul li:nth-of-type(1){
+    color: red;
+}
+
+ul li:nth-of-type(2){
+    color: yellowgreen;
+}
+
+ul li:nth-of-type(3){
+    color: blue;
+}
+ul li:nth-of-type(4){
+    color: violet;
+}
+ul li:nth-of-type(5){
+    color: brown;
+}
+
+.item{
+    width: 200px;    
+    height: 300px;
+    background-color: blueviolet;
+    border: 1px solid black;
+    box-sizing: border-box;
+    display: inline-block;
+}
+
+.box > div:last-of-type{ /*pegará o último item*/
+    background-color: rosybrown;
+}
+
+.box p:last-of-type{
+    color: yellowgreen;
+    font-variant: small-caps;
+}
+
+.box > div:last-of-type p { /*vai pegar apenas o texto e colorir*/
+    color: coral;
+}

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/img-dinamicas.css" type="text/css">
+    <title>IMAGENS DINÂMICAS</title>
+</head>
+<body>
+    <h1>IMAGENS DINÂMICAS!</h1>
+        <p class="p1">Tente abrir o site em diversos dispositivos, diferentes, ou aumente/diminua o tamanho do navegador</p>
+            <picture> 
+                <p><strong>"pciture"</strong> é uma TAG usada para permitir a criação de várias fontes, ou seja, se adapta ao aparelho em que a página será aberta. <br>
+                    <strong>Por ex:</strong> celular, tablet, computador. <br>
+                Assim, facilita para que a pessoa não tenha que ficar diminuindo ou aumentando a página com a barra de rolagem (scrol)</p>
+                    <source class="img" media="(max-width: 750px)" srcset="" type="image/png"> <!--tamanho de imagem para celular-->
+                    <source class="img" media="(max-width: 1050px)" srcset="" type="image/png"> <!-- tamanho de imagem para tablet-->
+                    <img class="img" src="" alt="Imagem Flexível"> <!--fotos grandes é indicável para computador-->
+                    <!--COLOCAR, SEMPRE, A MENOR PRIMEIRO, EM ORDEM CRESCENTE. -->
+                    
+            </picture>
+</body>
+</html>
